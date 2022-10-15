@@ -1,0 +1,45 @@
+<!Doctype html>
+<html>
+<title>EL Travel & Events</title>
+<style>
+h1{
+	text-align: center;
+}
+
+div{	
+	width: 80%;
+	margin: 0 auto;
+	text-align:center;
+	margin-top: 5%;
+}
+
+
+
+</style>
+
+<body>
+	<h1>Passport Application Form</h1>
+	<div>	
+		<select name="type" class="form-control" id="type">
+        	<option value="0" label="Select Application type... " selected="selected">Select a country ... </option>
+            	<option value="NW" label="New passport">New Passport Application</option>
+            	<option value="RW" label="Renewal">Passport Renewal</option>
+	</select>
+	</div>
+
+	<div>
+		<form> 
+		<form action="/server/py.py.html">
+  		<label for="fname">First name:</label>
+  		<input type="text" id="fname" name="fname"><br><br>
+  		<label for="lname">Last name:</label>
+  		<input type="text" id="lname" name="lname"><br><br>
+		<label for="mnum">Mobile number:</label>
+  		<input type="text" id="mnum" name="mnum"><br><br>
+  		<input type="submit" value="Submit">
+		</form>
+	</div>
+</body>
+
+
+</html>
